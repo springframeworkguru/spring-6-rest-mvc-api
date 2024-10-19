@@ -9,6 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <!-- artifacId should be lowercase to be able to push to github packages -->
     <groupId>guru.springframework</groupId>
     <artifactId>spring-6-rest-mvc-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
