@@ -1,27 +1,26 @@
-package guru.springframework.spring6restmvcapi.model;
+package guru.springframework.spring6restmvcapi.dto;
 
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 
-import java.sql.Timestamp;
 import java.util.UUID;
 
 /**
  * Created by jt, Spring Framework Guru.
  */
-@Builder
 @Data
-public class BeerOrderLineDTO {
+@Builder
+public class BeerOrderLineUpdateDTO {
+
     private UUID id;
 
-    private Long version;
-    private Timestamp createdDate;
-    private Timestamp lastModifiedDate;
-
-    private BeerDTO beer;
+    @NotNull
+    private UUID beerId;
 
     @Min(value = 1, message = "Quantity On Hand must be greater than 0")
     private Integer orderQuantity;
+
     private Integer quantityAllocated;
 }

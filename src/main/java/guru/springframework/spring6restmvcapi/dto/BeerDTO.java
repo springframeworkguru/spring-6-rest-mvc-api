@@ -1,4 +1,4 @@
-package guru.springframework.spring6restmvcapi.model;
+package guru.springframework.spring6restmvcapi.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

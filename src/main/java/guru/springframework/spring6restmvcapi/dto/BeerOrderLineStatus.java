@@ -1,4 +1,4 @@
-package guru.springframework.spring6restmvcapi.model;
+package guru.springframework.spring6restmvcapi.dto;
 
 /**
  * Created by jt, Spring Framework Guru.
